@@ -1,5 +1,5 @@
-# RePDH
-RePDH is a machine learning method using representation learning for predicting hot spots on protein-DNA interfaces.
+# PDI-Spot
+PDI-Spot is a machine learning method using representation learning for predicting hot spots on protein-DNA interfaces.
 
 Some dependencies are required as follows:
 
