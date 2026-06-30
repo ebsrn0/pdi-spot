@@ -81,7 +81,7 @@ def autogluon_run(X_train, y_train, X_indep, y_indep,num_bag_folds=5,num_bag_set
     train_data_wout_proteins=train_data[selected_features_training]
 
     # Train the AutoGluon predictor
-    predictor = TabularPredictor(label="label", problem_type='binary',eval_metric="roc_auc",sample_weight="balance_weight",groups=group).fit(train_data=train_data_wout_proteins,num_bag_folds=num_bag_folds, num_bag_sets=num_bag_sets ,presets=["best_quality"], num_stack_levels=0) 
+    predictor = TabularPredictor(label="label", problem_type='binary',eval_metric="roc_auc",sample_weight="balance_weight",groups=group).fit(train_data=train_data_wout_proteins,num_bag_folds=num_bag_folds, num_bag_sets=num_bag_sets ,num_cpus=1, num_stack_levels=0, presets=["best_quality"]) 
     
     # Combine features and target for AutoGluon
     indep_data = pd.concat([X_indep_scaled, y_indep], axis=1)
