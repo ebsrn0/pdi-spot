@@ -29,5 +29,5 @@ Some dependencies are required as follows:
 
    Run model_prediction.py with the model in the model folder, which gives the predicted hot spots as a result.
 
-The authors: Esra Basaran, Nurcan Tuncbag, Attila Gürsoy, and Özlem Keskin
+The authors: Esra Basaran, Attila Gürsoy, Özlem Keskin, and Nurcan Tuncbag
 
